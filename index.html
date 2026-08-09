@@ -11,8 +11,10 @@
 </head>
 
 <body class="bg-background">
-    <header class="border-b-2 border-secondary">
+    <header class="border-b border-secondary">
         <div class="container py-3 px-6 mx-auto flex justify-between items-center">
+
+            <!-- Logo -->
             <div class="logo-container flex items-center">
                 <div class="logo w-14 h-14 me-3">
                     <img class="w-full h-full object-contain" src="assets/images/AlHandasyahLogo.jpg"
@@ -20,21 +22,64 @@
                 </div>
                 <h1 class="font-semibold text-black text-xl">الهندسية</h1>
             </div>
-            <nav>
-                <ul class="flex items-center gap-8">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#projects">مشاريعنا</a></li>
-                    <li><a href="#purchasing">خطوات الشراء</a></li>
-                    <li><a href="#faq">الأسئلة الشائعة</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
+
+            <!-- Desktop Navigation -->
+            <nav class="max-[1024px]:hidden">
+                <ul class="flex items-center gap-6 text-gray">
+                    <li class="hover:text-primary transition-colors duration-300"><a href="#home">الرئيسية</a></li>
+                    <li class="hover:text-primary transition-colors duration-300"><a href="#about">من نحن</a></li>
+                    <li class="hover:text-primary transition-colors duration-300"><a href="#projects">مشاريعنا</a></li>
+                    <li class="hover:text-primary transition-colors duration-300"><a href="#purchasing">خطوات الشراء</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors duration-300"><a href="#faq">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors duration-300"><a href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
-            <div class="contact-us flex items-center border-2 border-primary rounded-3xl px-4 py-1.5">
-                <i class="fa-brands fa-whatsapp fa-lg text-primary me-2  leading-none"></i>
-                <p class="text-primary font-medium mb-1 me-0.5">تواصل معنا</p>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-3">
+
+                <!-- WhatsApp Contact -->
+                <a href="https://wa.me/+201150182048" target="_blank" rel="noopener noreferrer"
+                    class="contact-us flex items-center border-2 text-primary border-primary hover:text-background hover:bg-primary transition-colors duration-300  rounded-3xl px-4 py-1.5  max-[1024px]:border-none max-[1024px]:w-10 max-[1024px]:h-10 max-[1024px]:rounded-full max-[1024px]:bg-secondary max-[1024px]:justify-center">
+                    <i class="fa-brands fa-whatsapp fa-lg me-2 max-[1024px]:me-0"></i>
+                    <span class="font-medium mb-1  max-[1024px]:hidden">تواصل معنا</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" id="mobile-menu-button"
+                    class="hidden max-[1024px]:flex items-center justify-center w-10 h-10" aria-label="فتح القائمة"
+                    aria-expanded="false">
+                    <span class="hamburger relative w-6 h-5">
+                        <span
+                            class="hamburger-line absolute right-0 top-0 w-6 h-0.5 bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
+                        <span
+                            class="hamburger-line absolute right-0 top-1/2 w-6 h-0.5 bg-primary rounded-full transition-all duration-300 ease-in-out -translate-y-1/2"></span>
+                        <span
+                            class="hamburger-line absolute right-0 bottom-0 w-6 h-0.5 bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
+                    </span>
+                </button>
             </div>
         </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu"
+            class="max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-500 ease-in-out border-t border-secondary">
+            <ul class="container mx-auto px-6 py-4 flex flex-col gap-4 text-gray">
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#home">الرئيسية</a>
+                </li>
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#about">من نحن</a></li>
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#projects">مشاريعنا</a>
+                </li>
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#purchasing">خطوات
+                        الشراء</a></li>
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#faq">الأسئلة الشائعة</a>
+                </li>
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#contact">تواصل معنا</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <script src="assets/js/script.js"></script>
