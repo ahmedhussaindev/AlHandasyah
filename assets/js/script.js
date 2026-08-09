@@ -24,10 +24,14 @@ menuButton.addEventListener("click", () => {
 
     if (isOpen) {
         // Top line
+        hamburgerLines[0].classList.remove(
+            "h-[3px]"
+        );
         hamburgerLines[0].classList.add(
             "rotate-45",
             "top-1/2",
-            "-translate-y-1/2"
+            "-translate-y-1/2",
+            "h-0.5"
         );
         // Middle line
         hamburgerLines[1].classList.add(
@@ -41,13 +45,17 @@ menuButton.addEventListener("click", () => {
         );
         menuButton.setAttribute("aria-label", "إغلاق القائمة");
 
-    } 
+    }
     else {
         // Top line
         hamburgerLines[0].classList.remove(
             "rotate-45",
             "top-1/2",
-            "-translate-y-1/2"
+            "-translate-y-1/2",
+            "h-0.5"
+        );
+        hamburgerLines[0].classList.add(
+            "h-[3px]"
         );
         // Middle line
         hamburgerLines[1].classList.remove(
@@ -84,7 +92,11 @@ menuLinks.forEach((link) => {
         hamburgerLines[0].classList.remove(
             "rotate-45",
             "top-1/2",
-            "-translate-y-1/2"
+            "-translate-y-1/2",
+            "h-0.5"
+        );
+        hamburgerLines[0].classList.add(
+            "h-[3px]"
         );
         hamburgerLines[1].classList.remove(
             "opacity-0"
