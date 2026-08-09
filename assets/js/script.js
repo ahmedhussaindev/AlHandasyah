@@ -25,7 +25,7 @@ menuButton.addEventListener("click", () => {
     if (isOpen) {
         // Top line
         hamburgerLines[0].classList.remove(
-            "h-[3px]"
+            "h-0.75"
         );
         hamburgerLines[0].classList.add(
             "rotate-45",
@@ -55,7 +55,7 @@ menuButton.addEventListener("click", () => {
             "h-0.5"
         );
         hamburgerLines[0].classList.add(
-            "h-[3px]"
+            "h-0.75"
         );
         // Middle line
         hamburgerLines[1].classList.remove(
@@ -96,7 +96,7 @@ menuLinks.forEach((link) => {
             "h-0.5"
         );
         hamburgerLines[0].classList.add(
-            "h-[3px]"
+            "h-0.75"
         );
         hamburgerLines[1].classList.remove(
             "opacity-0"
