@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="الهندسية للتطوير العقاري شركة ناشئة متخصصة في تطوير وبيع الوحدات السكنية، نقدم شققًا سكنية بتصميمات عصرية ومواقع متميزة ومعايير هندسية راقية في مصر.">
+    <meta name="description"
+        content="الهندسية للتطوير العقاري شركة ناشئة متخصصة في تطوير وبيع الوحدات السكنية، نقدم شققًا سكنية بتصميمات عصرية ومواقع متميزة ومعايير هندسية راقية في مصر.">
     <title>الهندسية للتطوير العقاري</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="assets/images/AlHandasyah.jpg">
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 
 <body class="bg-background">
-    <header class="border-b border-secondary">
+    <header class="border-b border-secondary bg-background fixed top-0 left-0 right-0 z-50">
         <div class="container py-3 px-6 mx-auto flex justify-between items-center">
 
             <!-- Logo -->
@@ -21,7 +27,7 @@
                     <img class="w-full h-full object-contain" src="assets/images/AlHandasyahLogo.jpg"
                         alt="AlHandasyah logo">
                 </div>
-                <h1 class="font-semibold text-black text-xl">الهندسية</h1>
+                <h2 class="font-semibold text-black text-xl">الهندسية</h2>
             </div>
 
             <!-- Desktop Navigation -->
@@ -43,9 +49,9 @@
 
                 <!-- WhatsApp Contact -->
                 <a href="https://wa.me/+201150182048" target="_blank" rel="noopener noreferrer"
-                    class="contact-us flex items-center border-2 text-primary border-primary hover:text-background hover:bg-primary transition-colors duration-300  rounded-3xl px-4 py-1.5  max-[1024px]:border-none max-[1024px]:w-10 max-[1024px]:h-10 max-[1024px]:rounded-full max-[1024px]:bg-secondary max-[1024px]:justify-center">
+                    class="contact-us flex items-center border-2 text-primary border-primary hover:text-background hover:bg-primary transition-colors duration-300 rounded-3xl px-4 py-2 max-[1024px]:border-none max-[1024px]:w-10 max-[1024px]:h-10 max-[1024px]:rounded-full max-[1024px]:bg-secondary max-[1024px]:justify-center">
                     <i class="fa-brands fa-whatsapp fa-lg me-2 max-[1024px]:me-0"></i>
-                    <span class="font-medium mb-1  max-[1024px]:hidden">تواصل معنا</span>
+                    <span class="font-medium mb-0.5 pe-1 max-[1024px]:hidden">تواصل معنا </span>
                 </a>
 
                 <!-- Mobile Menu Button -->
@@ -84,8 +90,44 @@
     </header>
 
     <main>
-        <section class="hero-section">
+        <section id="home" class="hero-section container py-3 px-6 mt-28 sm:mt-32 mx-auto">
+            <div class="flex flex-col items-start sm:items-center">
+                <p class="text-primary bg-secondary rounded-3xl text-xs py-1.5 px-3 sm:px-5 sm:py-2 sm:font-medium sm:text-base sm:mb-5 mb-3 inline-block">مرحباً
+                    بكم في
+                    الهندسية</p>
+                <h1
+                    class="max-w-87.5 text-4xl font-bold text-black mb-6 leading-snug sm:max-w-none sm:text-5xl sm:text-center md:text-6xl">
+                    <span class="sm:block">نبنى مساحات تعكس </span>
+                    <span class="text-primary sm:block">رؤيتك للمستقبل</span>
+                </h1>
+                <p class="text-gray max-w-150 sm:text-[18px] sm:text-center leading-normal mb-6">شركة الهندسية للتطوير
+                    العقاري، نقدم مشاريع
+                    سكنية في مدينة
+                    العبور الجديدة بمعايير هندسية راقية وتصميمات عصرية تليق بك.</p>
 
+                <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mb-8">
+                    <a href="#projects"
+                        class="text-center border-2 text-background bg-primary border-primary hover:text-primary hover:bg-background transition-colors duration-300 rounded-2xl sm:rounded-3xl px-4 py-3">استكشف
+                        مشاريعنا</a>
+                    <a href="#contact"
+                        class="text-center border-2 text-black bg-white border-border-gray shadow hover:text-background hover:bg-primary hover:border-primary hover:shadow-none transition-[colors shadow] duration-300 rounded-2xl sm:rounded-3xl px-4 py-3">احجز
+                        وحدتك الآن</a>
+                </div>
+                <div class="xl:w-[92%] w-full h-60 sm:h-100 md:h-120 xl:h-150 relative">
+                    <img class="w-full h-full rounded-3xl object-cover md:object-fill" src="assets/images/heroImage.png"
+                        alt="واجهة مشروع الهندسية في العبور الجديدة">
+                    <div class="absolute flex divide-x divide-border-gray items-center rounded-2xl md:rounded-3xl bg-background p-2.5 sm:p-3 md:p-4 bottom-2 left-2 md:bottom-5 md:left-6">
+                        <div class="flex flex-col gap-1 md:gap-2 items-center pe-2 md:pe-4">
+                            <span class="text-primary font-normal md:font-semibold text-[14px] md:text-[18px]">+1</span>
+                            <span class="text-gray text-[12px] font-light md:font-normal md:text-[16px]">مشروعنا الأول</span>
+                        </div>
+                        <div class="flex flex-col gap-1 md:gap-2 items-center ps-2 md:ps-4">
+                            <span class="text-primary font-normal md:font-semibold text-[14px] md:text-[18px]">العبور الجديدة</span>
+                            <span class="text-gray text-[12px] font-light md:font-normal md:text-[16px]">موقع متميز</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
