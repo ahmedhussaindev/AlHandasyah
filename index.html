@@ -91,7 +91,7 @@
 
     <main>
         <!-- hero section -->
-        <section id="home" class="hero-section container py-3 px-6 pt-20 sm:pt-32 mx-auto">
+        <section id="home" class="hero-section container py-3 px-6 pt-28 sm:pt-32 mx-auto">
             <div class="flex flex-col items-start sm:items-center">
                 <p
                     class="text-primary bg-secondary rounded-3xl text-xs py-1.5 px-3 sm:px-5 sm:py-2 sm:font-medium sm:text-base sm:mb-5 mb-3 inline-block">
@@ -116,7 +116,7 @@
                         class="text-center border-2 text-black bg-white border-border-gray shadow hover:text-background hover:bg-primary hover:border-primary hover:shadow-none transition-[colors shadow] duration-300 rounded-2xl sm:rounded-3xl px-4 py-3">احجز
                         وحدتك الآن</a>
                 </div>
-                <div class="xl:w-[92%] w-full h-60 sm:h-100 md:h-120 xl:h-150 relative">
+                <div class="xl:w-[90%] w-full h-60 sm:h-100 md:h-120 xl:h-150 relative">
                     <img class="w-full h-full rounded-3xl object-cover md:object-fill" src="assets/images/heroImage.png"
                         alt="واجهة مشروع الهندسية في العبور الجديدة">
                     <div
@@ -137,7 +137,7 @@
             </div>
         </section>
         <!-- About Section -->
-        <section id="about" class="container mx-auto px-6 xl:w-[92%] py-24">
+        <section id="about" class="container mx-auto px-6 xl:w-[90%] pt-22 lg:pt-28">
             <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
                 <div>
                     <!-- Eyebrow -->
@@ -145,14 +145,13 @@
                         عن الهندسية
                     </span>
                     <!-- Heading -->
-                    <h2 class="mb-6 max-w-xl text-4xl font-bold leading-normal text-black sm:text-5xl">
+                    <h2 class="mb-6 max-w-xl text-3xl font-bold leading-normal text-black sm:text-5xl">
                         نبني بفكر
                         <span class="text-primary">هندسي</span>
                         <br class="hidden sm:block">
                         ونصنع مساحات
                         <span class="text-primary">تستحقها.</span>
                     </h2>
-
                     <!-- Description -->
                     <p class="mb-8 max-w-xl leading-8 text-gray">
                         في الهندسية، نؤمن أن العقار ليس مجرد مبنى، بل مساحة
@@ -207,17 +206,17 @@
                 <div>
                     <div class="grid h-70 grid-cols-2 gap-3 sm:h-145">
                         <!-- Main Image -->
-                        <div class="relative col-span-1 overflow-hidden rounded-3xl">
+                        <div class="relative min-h-0 overflow-hidden rounded-3xl">
                             <img src="assets/images/mainAbout.png" alt="مشروع الهندسية"
                                 class="h-full w-full object-cover transition-transform duration-700 hover:scale-105">
                         </div>
                         <!-- Right Column -->
-                        <div class="grid grid-rows-2 gap-3">
-                            <div class="overflow-hidden rounded-3xl">
+                        <div class="grid min-h-0 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] gap-3">
+                            <div class="min-h-0 overflow-hidden rounded-3xl">
                                 <img src="assets/images/about1.png" alt="مشروع سكني"
                                     class="h-full w-full object-cover transition-transform duration-700 hover:scale-105">
                             </div>
-                            <div class="overflow-hidden rounded-3xl">
+                            <div class="min-h-0 overflow-hidden rounded-3xl">
                                 <img src="assets/images/about2.png" alt="تفاصيل المشروع"
                                     class="h-full w-full object-cover transition-transform duration-700 hover:scale-105">
                             </div>
@@ -226,6 +225,104 @@
                 </div>
             </div>
         </section>
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-6 pt-22 lg:pt-28">
+            <!-- Section Header -->
+            <div class="mb-10 flex flex-col items-center text-center">
+                <span class="mb-4 inline-flex rounded-full bg-secondary px-4 py-2 text-sm font-medium text-primary">
+                    مشاريعنا
+                </span>
+                <h2 class="mb-4 text-4xl font-bold leading-normal text-black sm:text-5xl">
+                    مشروعنا
+                    <span class="text-primary">الأكثر تميزًا</span>
+                </h2>
+                <p class="max-w-2xl leading-7 text-gray">
+                    نبدأ رحلتنا بمشروع سكني متميز في العبور الجديدة،
+                    يجمع بين التصميم العصري والموقع المميز والتفاصيل المدروسة.
+                </p>
+            </div>
+            <!-- Featured Project -->
+            <div class="mx-auto max-w-5xl">
+                <article
+                    class="overflow-hidden rounded-3xl border border-border-gray bg-background shadow-sm transition-shadow duration-500 hover:shadow-lg">
+                    <!-- Image -->
+                    <div class="relative h-60 overflow-hidden sm:h-90 md:h-120">
+                        <img src="assets/images/heroImage.png" alt="واجهة مشروع الهندسية في العبور الجديدة"
+                            class="h-full w-full object-cover xl:object-fill transition-transform duration-700 hover:scale-105">
+                        <!-- Status Badge -->
+                        <span
+                            class="absolute right-4 top-4 rounded-full bg-background px-4 py-2 text-xs font-medium text-primary shadow-sm sm:right-6 sm:top-6">
+                            قيد التنفيذ
+                        </span>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 sm:p-8">
+                        <!-- Title -->
+                        <div class="mb-4">
+                            <p class="mb-2 flex items-center gap-2 text-sm text-gray">
+                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                العبور الجديدة
+                            </p>
+                            <h3 class="text-2xl font-bold text-black sm:text-3xl">مشروع الهندسية السكني</h3>
+                        </div>
+                        <!-- Description -->
+                        <p class="mb-7 max-w-3xl leading-7 text-gray">
+                            مشروع سكني بتصميم معماري عصري وموقع متميز أمام شارع 90
+                            الرئيسي وبجوار الحزام الأخضر، مع مجموعة من المميزات التي
+                            توفر تجربة سكنية مريحة وعملية.
+                        </p>
+                        <!-- Features -->
+                        <div class="mb-7 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4">
+                            <!-- Feature -->
+                            <div
+                                class="rounded-2xl border border-border-gray bg-background p-4 text-center transition-colors duration-300 hover:border-primary">
+                                <i class="fa-solid fa-ruler-combined mb-2 text-primary"></i>
+                                <p class="text-xs text-gray">المساحات</p>
+                                <p class="mt-1 font-semibold text-black">تبدأ من 185 م²</p>
+                            </div>
+                            <!-- Feature -->
+                            <div
+                                class="rounded-2xl border border-border-gray bg-background p-4 text-center transition-colors duration-300 hover:border-primary">
+                                <i class="fa-solid fa-elevator mb-2 text-primary"></i>
+                                <p class="text-xs text-gray">مصعد</p>
+                                <p class="mt-1 font-semibold text-black">من الجراج للروف</p>
+                            </div>
+                            <!-- Feature -->
+                            <div
+                                class="rounded-2xl border border-border-gray bg-background p-4 text-center transition-colors duration-300 hover:border-primary">
+                                <i class="fa-solid fa-car mb-2 text-primary"></i>
+                                <p class="text-xs text-gray">جراج</p>
+                                <p class="mt-1 font-semibold text-black">جراج للسيارات</p>
+                            </div>
+                            <!-- Feature -->
+                            <div
+                                class="rounded-2xl border border-border-gray bg-background p-4 text-center transition-colors duration-300 hover:border-primary">
+                                <i class="fa-solid fa-building mb-2 text-primary"></i>
+                                <p class="text-xs text-gray">الواجهة</p>
+                                <p class="mt-1 font-semibold text-black">بحرية بالكامل</p>
+                            </div>
+                        </div>
+                        <!-- Bottom -->
+                        <div
+                            class="flex flex-col gap-4 border-t border-border-gray pt-5 sm:flex-row sm:items-center sm:justify-between">
+                            <div class="flex items-center gap-2 text-sm text-gray">
+                                <span
+                                    class="flex h-9 w-9 items-center justify-center rounded-full bg-secondary text-primary">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <span>موقع متميز في العبور الجديدة</span>
+                            </div>
+                            <a href="#contact"
+                                class="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-medium text-background border-2 border-primary transition-all duration-300 hover:gap-3 hover:bg-background hover:text-primary hover:border-primary sm:rounded-3xl">
+                                تواصل معنا لمعرفة التفاصيل
+                                <i class="fa-solid fa-arrow-left text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="projects" class="container mx-auto px-6 pt-22 lg:pt-28"></section>
     </main>
 
     <script src="assets/js/script.js"></script>
