@@ -36,6 +36,8 @@
                     <li class="hover:text-primary transition-colors duration-300"><a href="#home">الرئيسية</a></li>
                     <li class="hover:text-primary transition-colors duration-300"><a href="#about">من نحن</a></li>
                     <li class="hover:text-primary transition-colors duration-300"><a href="#projects">مشاريعنا</a></li>
+                    <li><a class="block hover:text-primary transition-colors duration-300" href="#floor-plan">مخطط
+                            الوحدات</a>
                     <li class="hover:text-primary transition-colors duration-300"><a href="#purchasing">خطوات الشراء</a>
                     </li>
                     <li class="hover:text-primary transition-colors duration-300"><a href="#faq">الأسئلة الشائعة</a>
@@ -79,6 +81,8 @@
                 <li><a class="block hover:text-primary transition-colors duration-300" href="#about">من نحن</a></li>
                 <li><a class="block hover:text-primary transition-colors duration-300" href="#projects">مشاريعنا</a>
                 </li>
+                <li><a class="block hover:text-primary transition-colors duration-300" href="#floor-plan">مخطط
+                        الوحدات</a>
                 <li><a class="block hover:text-primary transition-colors duration-300" href="#purchasing">خطوات
                         الشراء</a></li>
                 <li><a class="block hover:text-primary transition-colors duration-300" href="#faq">الأسئلة الشائعة</a>
@@ -322,7 +326,161 @@
                 </article>
             </div>
         </section>
-        <section id="projects" class="container mx-auto px-6 pt-22 lg:pt-28"></section>
+        <!-- Floor Plan Section -->
+        <section id="floor-plan" class="container mx-auto px-6 xl:w-[90%] pt-22 lg:pt-28">
+            <!-- Section Header -->
+            <div class="mb-12 text-center">
+                <span class="mb-4 inline-flex rounded-full bg-secondary px-4 py-2 text-sm font-medium text-primary">
+                    مخطط الوحدات
+                </span>
+                <h2 class="mb-5 text-4xl font-bold leading-normal text-black sm:text-5xl">
+                    تصميم مدروس
+                    <span class="text-primary">لكل تفصيلة</span>
+                </h2>
+                <p class="mx-auto max-w-2xl leading-8 text-gray">
+                    تم تصميم الوحدات بعناية لتحقيق أفضل استفادة من المساحات،
+                    مع توزيع عملي للغرف والمرافق ومساحات المعيشة بما يوفر
+                    الراحة والخصوصية للسكان.
+                </p>
+            </div>
+            <!-- Floor Plan Content -->
+            <div class="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-center lg:gap-16">
+                <!-- Information -->
+                <div class="w-full lg:w-2/5">
+                    <h3 class="mb-5 text-2xl font-bold text-black sm:text-3xl">مخطط الوحدة</h3>
+                    <p class="mb-8 leading-8 text-gray">
+                        يعكس المخطط توزيعًا عمليًا ومدروسًا للمساحات، حيث تم
+                        الاهتمام بعلاقة الغرف بمناطق المعيشة والخدمات، مع
+                        الحفاظ على الخصوصية وسهولة الحركة داخل الوحدة.
+                    </p>
+                    <!-- Features -->
+                    <div class="mb-8 flex flex-col gap-4">
+                        <!-- Feature -->
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
+                                <i class="fa-solid fa-ruler-combined"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-1 font-semibold text-black">توزيع عملي للمساحات</h4>
+                                <p class="text-sm leading-6 text-gray">استغلال مدروس لكل مساحة داخل الوحدة.</p>
+                            </div>
+                        </div>
+                        <!-- Feature -->
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-1 font-semibold text-black">مساحات معيشة مريحة</h4>
+                                <p class="text-sm leading-6 text-gray">تصميم يوازن بين الراحة والوظيفية.</p>
+                            </div>
+                        </div>
+                        <!-- Feature -->
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
+                                <i class="fa-solid fa-door-open"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-1 font-semibold text-black">خصوصية أفضل</h4>
+                                <p class="text-sm leading-6 text-gray">فصل واضح بين مناطق المعيشة وغرف النوم.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA -->
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-3 font-medium text-background transition-all duration-300 hover:gap-3 hover:opacity-90">
+                        احجز وحدتك الآن
+                        <i class="fa-solid fa-arrow-left text-sm"></i>
+                    </a>
+                </div>
+                <!-- Floor Plan Image -->
+                <div class="w-full md:w-[90%] lg:w-[55%] xl:w-[45%]">
+                    <div class="overflow-hidden rounded-3xl border border-border-gray bg-white p-3 shadow-sm">
+                        <img src="assets/images/floorPlan.png" alt="مخطط الوحدات السكنية"
+                            class="h-auto w-full rounded-2xl object-contain transition-transform duration-700 hover:scale-[1.02]">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Purchasing Steps Section -->
+        <section id="purchasing" class="container mx-auto px-6 xl:w-[90%] pt-22 lg:pt-28">
+            <!-- Section Header -->
+            <div class="mb-14 text-center">
+                <span class="mb-4 inline-flex rounded-full bg-secondary px-4 py-2 text-sm font-medium text-primary">
+                    خطوات التملك
+                </span>
+                <h2 class="mb-4 text-4xl font-bold leading-tight text-black sm:text-5xl">
+                    رحلتك نحو
+                    <span class="text-primary">منزلك الجديد</span>
+                </h2>
+                <p class="mx-auto max-w-xl leading-8 text-gray">
+                    خطوات بسيطة وواضحة تبدأ من اختيار وحدتك
+                    وحتى استلامها.
+                </p>
+            </div>
+            <!-- Steps -->
+            <div class="mx-auto max-w-4xl">
+                <!-- Step 1 -->
+                <div class="relative flex gap-5 pb-12">
+                    <!-- Number -->
+                    <div
+                        class="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary font-semibold text-background shadow-sm">
+                        ١
+                    </div>
+                    <!-- Content -->
+                    <div class="pt-1">
+                        <h3 class="mb-2 text-xl font-bold text-black">اختيار الوحدة</h3>
+                        <p class="max-w-xl leading-7 text-gray">
+                            استعرض مخططاتنا واختر الوحدة التي تتناسب
+                            مع احتياجاتك وتطلعاتك.
+                        </p>
+                    </div>
+                    <!-- Connector -->
+                    <span class="absolute right-5.75 top-12 h-[calc(100%-24px)] w-px bg-border-gray"></span>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative flex gap-5 pb-12">
+                    <!-- Number -->
+                    <div
+                        class="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-background font-semibold text-primary">
+                        ٢
+                    </div>
+                    <!-- Content -->
+                    <div class="pt-1">
+                        <h3 class="mb-2 text-xl font-bold text-black">
+                            حجز الوحدة
+                        </h3>
+
+                        <p class="max-w-xl leading-7 text-gray">
+                            دفع مقدم الحجز وتوقيع عقد التعاقد الابتدائي
+                            لتأكيد حجز وحدتك.
+                        </p>
+                    </div>
+                    <!-- Connector -->
+                    <span class="absolute right-5.75 top-12 h-[calc(100%-48px)] w-px bg-border-gray"></span>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex gap-5">
+                    <!-- Number -->
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-background font-semibold text-primary">
+                        ٣
+                    </div>
+                    <!-- Content -->
+                    <div class="pt-1">
+                        <h3 class="mb-2 text-xl font-bold text-black">التقسيط والتسليم</h3>
+                        <p class="max-w-xl leading-7 text-gray">
+                            الالتزام بنظام السداد المتفق عليه
+                            حتى موعد استلام وحدتك.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="purchasing" class="container mx-auto px-6 xl:w-[90%] pt-22 lg:pt-28"></section>
     </main>
 
     <script src="assets/js/script.js"></script>
