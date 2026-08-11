@@ -109,3 +109,35 @@ menuLinks.forEach((link) => {
         menuButton.setAttribute("aria-label", "فتح القائمة");
     });
 });
+
+
+
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+
+    const button = item.querySelector(".faq-button");
+    const answer = item.querySelector(".faq-answer");
+    const icon = item.querySelector(".faq-icon");
+
+    button.addEventListener("click", () => {
+        const isOpen = button.getAttribute("aria-expanded") === "true"; 
+
+        // Close current item
+        button.setAttribute("aria-expanded", !isOpen); 
+
+        if (isOpen) { 
+            answer.classList.remove("grid-rows-[1fr]");
+            answer.classList.add("grid-rows-[0fr]");
+
+            icon.classList.remove("rotate-180");
+        }
+        else {
+            answer.classList.remove("grid-rows-[0fr]");
+            answer.classList.add("grid-rows-[1fr]");
+
+            icon.classList.add("rotate-180");
+        }
+    });
+});
